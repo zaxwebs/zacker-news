@@ -18,8 +18,8 @@ class App extends Component {
 		this.refreshHits();
 	}
 
-	refreshHits = (query = '') => {
-		fetch(`https://hn.algolia.com/api/v1/search_by_date?tags=story&query=${query}`)
+	refreshHits = (query = '', page = 0) => {
+		fetch(`https://hn.algolia.com/api/v1/search_by_date?tags=story&query=${query}&page=${page}`)
 		.then(response => response.json())
 		.then(data => {
 			this.setState({hits: data.hits});

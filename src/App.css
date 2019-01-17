@@ -1,3 +1,6 @@
+*{
+	word-wrap: break-word;
+}
 #cover
 {
 	background:linear-gradient(#8F44E8,#4A80DB);
