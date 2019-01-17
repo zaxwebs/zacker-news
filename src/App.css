@@ -1,0 +1,17 @@
+#cover
+{
+	background:linear-gradient(#8F44E8,#4A80DB);
+	height:40vh;
+	min-height: 300px;
+	display: flex;
+	align-items: center;
+	color:white;
+}
+#cover .container
+{
+	text-align: center;
+}
+.container
+{
+	max-width: 600px;
+}
